@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note Taking App</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="icons/css/all.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
+</head>
+<body id="body" spellcheck="false">
+    <header class="header">
+        <h1>NoteMe</h1>
+        <p id="description">The most user-friendly note taking app</p>
+    </header>
+    <div class="app">
+        <div id="edit-wrap">
+            <h2 id="about">Create your note here</h2>
+            <div   id="edit">
+                <div  contenteditable="true" class="note-input" tabindex="0" spellcheck="false" data-placeholder="Enter title" id="title-input"></div>
+                <div  contenteditable="true" class="note-input" tabindex="0" spellcheck="false" data-placeholder="Note..."  id="text-input"></div>
+            </div>
+        </div>
+        <div class="output">
+            <p id="no-note">Your notes will be here</p>
+        </div>
+        <div class="background"></div>
+    </div>
+    <footer class="footer">
+        <p class="footer-link">Created by <a href="https://github.com/MotyaBolt" target="_blank" class="profile-link">Matvey Boltach</a></p>
+        <div class="icons">
+            <a class="link" target="_blank" href="https://vk.com/lupapupa0505"><i class="fab fa-vk"></i></a>
+            <a class="link" target="_blank" href="https://t.me/matv_money"><i class="fab fa-telegram"></i></a>
+            <a class="link" target="_blank" href="https://github.com/MotyaBolt"><i class="fab fa-github"></i></a>
+            <a class="link" target="_blank" href="https://codepen.io/motyabolt"><i class="fab fa-codepen"></i></a>
+            <a class="link" target="_blank" href="https://mail.google.com/mail/u/0/#inbox?compose=new"><i class="far fa-envelope"></i></a>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
