@@ -362,13 +362,4 @@ h1 {
         outline: none;
     }
 }
-@media screen and (min-width: 600px) {
-    .output-after {
-        width: 100%;
-    }
-}
-@media screen and (max-width: 1000px) {
-    .output-after {
-        width: 100%;
-    }
-}
+
