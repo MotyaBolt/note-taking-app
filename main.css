@@ -367,7 +367,7 @@ h1 {
         width: 100%;
     }
 }
-@media screen and (max-width: 1000%) {
+@media screen and (max-width: 1000px) {
     .output-after {
         width: 100%;
     }
