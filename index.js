@@ -7,7 +7,6 @@ let backGrnd = document.querySelector(".background");
 let size = false;
 let noNotes = true;
 let noteCount = 0;
-let notes = [];
 // function to add note on blur
 const addNote = () => {
     if(inputTitle.innerHTML !== '' || inputText.innerHTML !== '') {
@@ -48,10 +47,6 @@ const addNote = () => {
         noteTitle.tabIndex = "0";
         noteText.tabIndex = "0";
         note.tabIndex = "0";
-        notes.push(note);
-        for(let i = 0; i < notes.length; i++) {
-            localStorage.setItem("note", notes[i].outerHTML)
-        }
         // when user clicked on note
         const noteOnFocus = () => {
             if (size === false) {
@@ -160,7 +155,3 @@ inputText.addEventListener("blur", (e) => {
         inputText.innerHTML = '';
     };
 });
-window.addEventListener("load", () => {
-    let notesFromStorage = localStorage.getItem("note");
-    console.log(notesFromStorage)
-})
