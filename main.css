@@ -67,6 +67,8 @@
     max-height: 90px;
     font-size: 22px;
     overflow: scroll;
+    -ms-overflow-style: none;  
+    scrollbar-width: none; 
 }
 
 #text-input {
@@ -74,6 +76,16 @@
     min-height: 90px;
     max-height: 130px;
     overflow: scroll;
+    -ms-overflow-style: none;  
+    scrollbar-width: none; 
+}
+
+#title-input::-webkit-scrollbar {
+    display: none;
+}
+
+#text-input::-webkit-scrollbar {
+    display: none;
 }
 
 .header {
@@ -276,6 +288,8 @@ h1 {
     padding: 5px; 
     padding-left: 10px; 
     outline: none;
+     -ms-overflow-style: none;  
+    scrollbar-width: none; 
 }
 
 .note-text-input-after {
@@ -286,6 +300,16 @@ h1 {
     padding-left: 10px; 
     font-size: 17px;
     outline: none;
+     -ms-overflow-style: none;  
+    scrollbar-width: none; 
+}
+
+.note-title-input-after::-webkit-scrollbar {
+    display: none;
+}
+
+.note-text-input-after::-webkit-scrollbar {
+    display: none;
 }
 
 .background-after {
