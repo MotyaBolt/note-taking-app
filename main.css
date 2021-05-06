@@ -1,389 +1,406 @@
 #edit {
-    display: flex;
-    flex-direction: column;
-    width: 520px;
-    min-height: 180px;
-    max-height: 300px;
-    box-shadow: rgba(70, 69, 69, 0.35) 0px 5px 15px;
+  display: flex;
+  flex-direction: column;
+  width: 520px;
+  min-height: 180px;
+  max-height: 300px;
+  box-shadow: rgba(70, 69, 69, 0.35) 0px 5px 15px;
 }
 #edit-wrap {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
 }
 
 .note-block {
-    width: 300px;
-    height: 150px;
-    border-radius: 10px;
-    border: 1px solid rgb(103, 103, 144);
-    transition: all 0.4s ease;
-    -webkit-animation: appear 0.5s;
-    -moz-animation:    appear 0.5s;
-    -o-animation:      appear 0.5s;
-    animation:         appear 0.5s; 
-    margin: 15px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    outline: none;
+  width: 300px;
+  height: 150px;
+  border-radius: 10px;
+  border: 1px solid rgb(103, 103, 144);
+  transition: all 0.4s ease;
+  -webkit-animation: appear 0.5s;
+  -moz-animation: appear 0.5s;
+  -o-animation: appear 0.5s;
+  animation: appear 0.5s;
+  margin: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  outline: none;
 }
 
 .note-block:hover {
-    transform: translateY(-8px);
+  transform: translateY(-8px);
 }
 
 .note-after {
-    background-color: white;
-    position: fixed;
-    width: 500px;
-    min-height: 300px;
-    max-height: 450px;
-    top: 180px;
-    left: 50%;
-    z-index: 12;
-    margin-left: -250px;
-    border-radius: 10px;
-    border: 1px solid rgb(103, 103, 144);
-    outline: none;
+  background-color: white;
+  position: fixed;
+  width: 500px;
+  min-height: 300px;
+  max-height: 450px;
+  top: 180px;
+  left: 50%;
+  z-index: 12;
+  margin-left: -250px;
+  border-radius: 10px;
+  border: 1px solid rgb(103, 103, 144);
+  outline: none;
 }
 
 [data-placeholder]:empty:before {
-    content: attr(data-placeholder);
-    position: absolute;
-    color: rgb(100, 100, 100);
-    background-color: transparent;
-    cursor: text;
+  content: attr(data-placeholder);
+  position: absolute;
+  color: rgb(100, 100, 100);
+  background-color: transparent;
+  cursor: text;
 }
 
 .note-input {
-    padding: 8px;
-    padding-left: 10px;
-    outline: none;
+  padding: 8px;
+  padding-left: 10px;
+  outline: none;
 }
 
 #title-input {
-    min-height: 50px;
-    max-height: 90px;
-    font-size: 22px;
-    overflow: scroll;
-    -ms-overflow-style: none;  
-    scrollbar-width: none; 
+  min-height: 50px;
+  max-height: 90px;
+  font-size: 22px;
+  overflow: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 #text-input {
-    font-size: 18px;
-    min-height: 90px;
-    max-height: 130px;
-    overflow: scroll;
-    -ms-overflow-style: none;  
-    scrollbar-width: none; 
+  font-size: 18px;
+  min-height: 90px;
+  max-height: 130px;
+  overflow: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 #title-input::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 #text-input::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 .header {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    height: 70px;
-    box-shadow: 0 4px 5px 0 rgb(223, 222, 222);
-    background-color: white;
-    z-index: 1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  box-shadow: 0 4px 5px 0 rgb(223, 222, 222);
+  background-color: white;
+  z-index: 1;
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
-    position: relative;
+  font-family: 'Open Sans', sans-serif;
+  position: relative;
 }
 
-html, body {
-    padding: 0;
-    margin: 0;
+html,
+body {
+  padding: 0;
+  margin: 0;
 }
 
 h1 {
-    margin: 0;
-    font-size: 36px;
-    color: rgb(103, 103, 144);
+  margin: 0;
+  font-size: 36px;
+  color: rgb(103, 103, 144);
 }
 
 #about {
-    text-align: center;
-    font-size: 40px;
-    font-weight: 550;
-    margin-top: 100px;
-    margin-bottom: 70px;
-    font-family: 'Roboto', sans-serif;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 550;
+  margin-top: 100px;
+  margin-bottom: 70px;
+  font-family: 'Roboto', sans-serif;
 }
 
 @-webkit-keyframes appear {
-    0%   { opacity: 0; }
-    100% { opacity: 1; }
+  0% {
+    opacity: 0;
   }
-  @-moz-keyframes appear {
-    0%   { opacity: 0; }
-    100% { opacity: 1; }
+  100% {
+    opacity: 1;
   }
-  @-o-keyframes appear {
-    0%   { opacity: 0; }
-    100% { opacity: 1; }
+}
+@-moz-keyframes appear {
+  0% {
+    opacity: 0;
   }
-  @keyframes appear {
-    0%   { opacity: 0; }
-    100% { opacity: 1; }
+  100% {
+    opacity: 1;
   }
+}
+@-o-keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
 #description {
-    font-family: 'Raleway', sans-serif;
-    font-size: 24px;
-    -webkit-animation: appear 2s;
-    -moz-animation:    appear 2s;
-    -o-animation:      appear 2s;
-    animation:         appear 2s; 
+  font-family: 'Raleway', sans-serif;
+  font-size: 24px;
+  -webkit-animation: appear 2s;
+  -moz-animation: appear 2s;
+  -o-animation: appear 2s;
+  animation: appear 2s;
 }
 
 .output {
-    min-height: 500px;
-    display: flex;
-    justify-content: center;
+  min-height: 500px;
+  display: flex;
+  justify-content: center;
 }
 
 .output-after {
-    display: flex;
-    flex-wrap: wrap;
-    min-height: 370px;
-    padding-top: 90px;
-    padding-bottom: 40px;
-    width: 1000px;
-    position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 370px;
+  padding-top: 90px;
+  padding-bottom: 40px;
+  width: 1000px;
+  position: relative;
 }
 
 .app {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #no-note {
-    font-size: 27px;
-    color: rgb(90, 84, 84);
-    margin-top: 205px;
+  font-size: 27px;
+  color: rgb(90, 84, 84);
+  margin-top: 205px;
 }
 
 .footer {
-    height: 160px;
-    background-color: rgb(103, 103, 144);
-    color: white;
-    font-family: 'Noto Sans JP', sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
+  height: 160px;
+  background-color: rgb(103, 103, 144);
+  color: white;
+  font-family: 'Noto Sans JP', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
 
 .footer-link {
-    margin: 0;
-    text-align: center;
-    padding-top: 35px;
-    font-size: 19px;
+  margin: 0;
+  text-align: center;
+  padding-top: 35px;
+  font-size: 19px;
 }
 
 .profile-link {
-    cursor: pointer;
-    text-decoration: none;
-    color: white;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
 }
 
 .icons {
-    margin-top: 25px;
-    display: flex;
-    justify-content: space-evenly;
-    width: 200px;
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-evenly;
+  width: 200px;
 }
 
-.fab, .far {
-    font-size: 23px;
-    color: rgb(246, 236, 236);
-    transition: all 0.4s ease;
-    cursor: pointer;
+.fab,
+.far {
+  font-size: 23px;
+  color: rgb(246, 236, 236);
+  transition: all 0.4s ease;
+  cursor: pointer;
 }
 
 .fab:hover {
-    color: white;
+  color: white;
 }
 
 .far:hover {
-    color: white;
+  color: white;
 }
 
 .remove-note {
-    background-color: white;
-    outline: none;
-    border: none;
-    border-radius: 10px;
-    padding: 8px;
-    cursor: pointer;
-    color: #8383b1;
-    transition: all 0.4s ease;
+  background-color: white;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  padding: 8px;
+  cursor: pointer;
+  color: #8383b1;
+  transition: all 0.4s ease;
 }
 
 .remove-note:hover {
-    color:  rgb(103, 103, 144);
+  color: rgb(103, 103, 144);
 }
 
 .fas {
-    font-size: 21px;
-    cursor: pointer;
+  font-size: 21px;
+  cursor: pointer;
 }
 
 .note-wrap {
-    height: 110px;
+  height: 110px;
 }
 
 .note-wrap-after {
-    min-height: 225px;
-    max-height: 337.5px;
+  min-height: 225px;
+  max-height: 337.5px;
 }
 
 .buttons-wrap {
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    height: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 40px;
 }
 
 .note-title-input {
-    overflow: hidden;
-    padding: 5px; 
-    padding-left: 10px;
-    text-overflow: ellipsis; 
-    outline: none;
-    font-size: 21px;
-    height: 30px;
+  overflow: hidden;
+  padding: 5px;
+  padding-left: 10px;
+  text-overflow: ellipsis;
+  outline: none;
+  font-size: 21px;
+  height: 30px;
 }
 .note-text-input {
-    overflow: hidden;
-    padding: 5px; 
-    padding-left: 10px;
-    text-overflow: ellipsis; 
-    outline: none;
-    font-size: 17px;
-    height: 60px;
+  overflow: hidden;
+  padding: 5px;
+  padding-left: 10px;
+  text-overflow: ellipsis;
+  outline: none;
+  font-size: 17px;
+  height: 60px;
 }
 
 .note-title-input-after {
-    font-size: 21px;
-    min-height: 50px;
-    max-height: 130px;
-    overflow: scroll;
-    padding: 5px; 
-    padding-left: 10px; 
-    outline: none;
-     -ms-overflow-style: none;  
-    scrollbar-width: none; 
+  font-size: 21px;
+  min-height: 50px;
+  max-height: 130px;
+  overflow: scroll;
+  padding: 5px;
+  padding-left: 10px;
+  outline: none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 .note-text-input-after {
-    min-height: 110px;
-    max-height: 190px;
-    overflow: scroll;
-    padding: 5px; 
-    padding-left: 10px; 
-    font-size: 17px;
-    outline: none;
-     -ms-overflow-style: none;  
-    scrollbar-width: none; 
+  min-height: 110px;
+  max-height: 190px;
+  overflow: scroll;
+  padding: 5px;
+  padding-left: 10px;
+  font-size: 17px;
+  outline: none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 .note-title-input-after::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 .note-text-input-after::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 .background-after {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: #444549;
-    opacity: 0.8;
-    z-index: 10;
-    top: 0;
-    left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #444549;
+  opacity: 0.8;
+  z-index: 10;
+  top: 0;
+  left: 0;
 }
 
 .close-btn-wrap {
-    height: 40px;
-    width: 100%;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
+  height: 40px;
+  width: 100%;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .close-note {
-    background-color: white;
-    outline: none;
-    height: 100%;
-    width: 75px;
-    margin-right: 8px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    transition: all 0.3s ease;
+  background-color: white;
+  outline: none;
+  height: 100%;
+  width: 75px;
+  margin-right: 8px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .close-note:hover {
-    background-color:  rgb(246, 246, 246);
+  background-color: rgb(246, 246, 246);
 }
 
-@media screen and (max-width: 600px) { 
-    .output-after {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        flex-wrap: nowrap;
-    }
-    #description {
-        display: none;
-    }
-    .header {
-        justify-content: center;
-    }
-    #edit {
-        width: 300px;
-    }
-    #about {
-        font-size: 30px;
-    }
-    .note-after {
-        width: 350px;
-    }
-    .note-after {
-        background-color: white;
-        position: fixed;
-        width: 300px;
-        min-height: 300px;
-        max-height: 450px;
-        top: 180px;
-        z-index: 12;
-        left: 50%;
-        margin-left: -47%;
-        border-radius: 10px;
-        border: 1px solid rgb(103, 103, 144);
-        outline: none;
-    }
+@media screen and (max-width: 600px) {
+  .output-after {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+  #description {
+    display: none;
+  }
+  .header {
+    justify-content: center;
+  }
+  #edit {
+    width: 300px;
+  }
+  #about {
+    font-size: 30px;
+  }
+  .note-after {
+    width: 350px;
+  }
+  .note-after {
+    background-color: white;
+    position: fixed;
+    width: 300px;
+    min-height: 300px;
+    max-height: 450px;
+    top: 180px;
+    z-index: 12;
+    left: 50%;
+    margin-left: -47%;
+    border-radius: 10px;
+    border: 1px solid rgb(103, 103, 144);
+    outline: none;
+  }
 }
-
